@@ -36,12 +36,14 @@
 .symbol-icon(@name) {
   font-family: 'symbol-icons';
   content: @@name;
+  display: inline-block;
 }
 
 .symbol-icon-colored(@name) {
   .symbol-icon(@name);
   @color: "@{name}-color";
   color: @@color;
+  display: inline-block;
 }
 
 @symbol-access-private: '\f023';
